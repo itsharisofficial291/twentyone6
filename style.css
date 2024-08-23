@@ -252,7 +252,8 @@ text-align: center;
 
 .right-section  p{
     font-weight: 300;
-    font-family: 'Houschka', 'Roboto Condensed';    text-transform: capitalize;
+    font-family: 'Houschka', 'Roboto Condensed';   
+    
 }
 .sec3 {
     width: 100%;
@@ -299,26 +300,38 @@ text-align: center;
 
 .slides {
     display: flex;
-    flex-wrap: wrap; /* Allow slides to wrap on smaller screens */
-    gap: 20px; /* Space between slides */
     width: 100%;
-    justify-content: center; /* Center slides within the container */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    margin-bottom: 100px;
+    transition: transform 0.5s ease; /* Smooth transition for slide movement */
+    gap: 20px;
 }
 
 .slide {
-    background-color: #1A1A1A; /* Background color for each slide */
-    padding: 20px;
+    flex: 1 1 250px;
+    min-width: 270px;
+    max-width: 250px; /* Define the max width for normal slides */
+    background-color: #1A1A1A;
+    padding: 10px;
     border-radius: 10px;
-flex: 1 1 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     box-sizing: border-box;
-    position: relative; /* To position the SVG border absolutely */
-    min-width: 250px; /* Minimum width for responsiveness */
+    position: relative;
+}
+
+.half-slide {
+    flex: 1 1 125px; /* Half the flex basis of other slides */
+    max-width: 250px; /* Limit the max width to half of normal slides */
+}
+
+@media (max-width: 768px) {
+    .half-slide {
+        flex: 1 1 100%;
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .slides {
+        flex-direction: column; /* Stack slides vertically on smaller screens */
+        align-items: center;
+    }
 }
 
 .slide::before {
@@ -339,8 +352,8 @@ flex: 1 1 250px;
     flex-direction: column;
     align-items: center;
     width: 100%; /* Make content take full width of slide */
-    margin: 20px;   
-    padding-bottom: 20%;
+  
+    padding: 0px;
 }
 
 .up {
@@ -353,7 +366,7 @@ flex: 1 1 250px;
 }
 
 .slide-content h3 {
-    font-size: 24px; /* Adjust font size as needed */
+    font-size: 20px; /* Adjust font size as needed */
     color: #86193d; /* Color for the heading */
    /* Space between heading and image */
     width: 100%;
@@ -370,7 +383,7 @@ flex: 1 1 250px;
 }
 
 .slide-content p {
-    font-size: 16px;
+    font-size: 13px;
     padding-top: 20px;
     text-align: start;
 }
