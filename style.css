@@ -265,7 +265,6 @@ text-align: center;
     align-items: center;
     justify-content: center;
     padding: 20px 20px;
-    
     box-sizing: border-box;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -389,19 +388,35 @@ text-align: center;
 }
 
 /* Responsive adjustments */
+/* Responsive Styles for Tablets and Larger Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .slide {
+        min-width: calc(33.33% - 20px); /* Show 3 slides at a time with space for gap */
+        max-width: calc(33.33% - 20px); /* Adjust for the gap */
+    }
+}
+
+/* Responsive Styles for Mobile Devices */
 @media (max-width: 768px) {
-    .sec3 {
-        height: auto; /* Allow height to adjust on smaller screens */
-        padding: 10px;
+    .slide {
+        min-width: calc(50% - 20px); /* Show 2 slides at a time with space for gap */
+        max-width: calc(50% - 20px); /* Adjust for the gap */
     }
 
     .slides {
-        flex-direction: column; /* Stack slides vertically on smaller screens */
-        align-items: center; /* Center slides within the container */
+        flex-direction: row; /* Keep slides in a row direction for horizontal scrolling */
     }
+}
 
+/* Responsive Styles for Smaller Mobile Devices */
+@media (max-width: 480px) {
     .slide {
-        width: 80%; /* Ensure slides take most of the width on smaller screens */
-        margin-bottom: 20px; /* Space between stacked slides */
+        min-width: 100%; /* Show 1 slide at a time */
+        max-width: 100%; /* Ensure slides take up full width */
+        margin-bottom: 20px; /* Space between slides */
+    }
+    
+    .slides {
+        gap: 10px; /* Reduce gap between slides */
     }
 }
