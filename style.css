@@ -161,8 +161,9 @@ text-align: center;
 
 .sec2 {
     width: 100%;
-    height: 100%;
+    height: auto;
     background: #FFEADF;
+    background-image: url(images/brand-essense1.png);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,7 +173,7 @@ text-align: center;
 }
 
 .container {
-    height: 676px; /* Fixed height for container */
+    height: 100%; /* Fixed height for container */
     display: flex;
     align-items: center; /* Center content vertically */
     gap: 0; /* No gap between columns */
@@ -222,10 +223,11 @@ text-align: center;
         padding: 20px; /* Adjust padding on smaller screens */
         height: auto; /* Allow height to adjust on smaller screens */
     }
+    
 
-    .left-section, .right-section {
+    .container {
         width: 100%; /* Ensure sections take full width */
-        padding: 10px; /* Adjust padding on smaller screens */
+        padding-top: 10%; /* Adjust padding on smaller screens */
     }
 
     
@@ -250,6 +252,128 @@ text-align: center;
 
 .right-section  p{
     font-weight: 300;
-    font-family: 'Houschka', 'Roboto Condensed';
-    text-transform: capitalize;
+    font-family: 'Houschka', 'Roboto Condensed';    text-transform: capitalize;
+}
+.sec3 {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.sec3 .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 110px;
+}
+
+.sec3 .title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.slides {
+    display: flex;
+    flex-wrap: wrap; /* Allow slides to wrap on smaller screens */
+    gap: 20px; /* Space between slides */
+    width: 100%;
+    justify-content: center; /* Center slides within the container */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin-bottom: 100px;
+}
+
+.slide {
+    background-color: #1A1A1A; /* Background color for each slide */
+    padding: 20px;
+    border-radius: 10px;
+flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative; /* To position the SVG border absolutely */
+    min-width: 250px; /* Minimum width for responsiveness */
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-image: url('images/sec3vector.png') 30 round; /* Adjust path to your SVG file */
+    border-image-slice: 1;
+    pointer-events: none; /* Ensure the border does not interfere with interactions */
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Make content take full width of slide */
+    margin: 20px;   
+    padding-bottom: 20%;
+}
+
+.up {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%; /* Ensure it takes full width of the slide */
+    margin-bottom: 11px; /* Space below the title and image */
+    
+}
+
+.slide-content h3 {
+    font-size: 24px; /* Adjust font size as needed */
+    color: #86193d; /* Color for the heading */
+   /* Space between heading and image */
+    width: 100%;
+    text-align: start;
+    font-weight: 700;
+}
+
+.slide-content img {
+    width: 30%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+ 
+    height: 50%;
+   
+}
+
+.slide-content p {
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: start;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sec3 {
+        height: auto; /* Allow height to adjust on smaller screens */
+        padding: 10px;
+    }
+
+    .slides {
+        flex-direction: column; /* Stack slides vertically on smaller screens */
+        align-items: center; /* Center slides within the container */
+    }
+
+    .slide {
+        width: 80%; /* Ensure slides take most of the width on smaller screens */
+        margin-bottom: 20px; /* Space between stacked slides */
+    }
 }
