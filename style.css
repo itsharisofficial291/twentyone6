@@ -276,6 +276,21 @@ text-align: center;
     padding-top: 110px;
 }
 
+
+.sec3 .prevbuttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-left: 70%;
+    gap: 20px;
+   
+    
+}
+.prevbuttons img{
+   width: 22%; /* Adjust the size of images */
+    left: 80%;
+    height: auto;  
+}
 .sec3 .title h2 {
     font-size: 36px;
     font-weight: bold;
