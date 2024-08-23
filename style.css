@@ -1,0 +1,255 @@
+#main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Center items vertically */
+    background-color: #f9f9f9;
+    background-image: url('images/overlay.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    position: relative;
+    margin-bottom: 0rem !important; 
+    font-family: 'Vissa', 'Roboto Condensed';
+
+}
+
+
+
+.logo-container {
+    width: 100px;
+    height: 41.38px;
+    position: absolute;
+    top: 28.23px;
+    left: 260px; /* Adjusted left to be closer to the edge */
+    opacity: 1; /* Ensure logo is visible */
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+
+}
+
+.breadcrumb-items {
+    display: flex;
+    flex-direction: column; /* Align title and breadcrumb vertically */
+    align-items: center; /* Center breadcrumb items */
+    justify-content: center; /* Center the container itself */
+    width: 100%; /* Make the breadcrumb items container full width */
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.breadcrumb-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px; /* Space between the title and breadcrumb links */
+}
+
+.breadcrumb-items ol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    margin: 0 5px;
+    color: #ffffff; /* Color of the slash separator */
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.breadcrumb-item.active {
+    color: #cccccc; /* Active breadcrumb color */
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-family: Vissa;
+font-size: 95px;
+font-weight: 400;
+line-height: 66px;
+letter-spacing: 0.04em;
+text-align: center;
+
+}
+
+.link {
+    font-size: 14px;
+    display: flex;
+    justify-content: center; /* Center the links */
+    width: 100%; /* Ensure the links take up the full width */
+}
+
+.link a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.link a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.slash {
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 5-px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .breadcrumb {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align breadcrumb items to start */
+        padding: 10px;
+        height: auto; /* Adjust height */
+    }
+
+    .logo-container {
+        position: relative; /* Make logo part of document flow */
+        top: 0;
+        left: 0;
+        margin-bottom: 10px; /* Space between logo and breadcrumb items */
+    }
+
+    .breadcrumb-items {
+        align-items: center; /* Center breadcrumb items */
+        text-align: center;
+        width: 100%; /* Make it take full width */
+    }
+
+    .breadcrumb-title {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .breadcrumb-items ol {
+        flex-direction: column; /* Stack breadcrumb items vertically */
+    }
+
+ 
+
+}
+
+.sec2 {
+    width: 100%;
+    height: 100%;
+    background: #FFEADF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%; /* Padding around the container */
+    box-sizing: border-box;
+    font-family: 'Vissa', 'Roboto Condensed';
+}
+
+.container {
+    height: 676px; /* Fixed height for container */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    gap: 0; /* No gap between columns */
+    padding: 0; /* Remove default padding */
+}
+
+.row {
+    margin: 0; /* Remove default margin */
+}
+
+.left-section, .right-section {
+    display: flex;
+    align-items: left; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.left-section {
+    /* Additional styling for the left section */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.right-section {
+    /* Additional styling for the right section */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: left; /* Left-align text */
+    display: flex;
+    flex-direction: column; /* Ensure text elements stack vertically */
+    justify-content: left; /* Center content vertically within the section */
+}
+
+.right-section h2, .right-section p {
+    margin: 0; /* Remove default margin */
+}
+
+.img-fluid {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text-capitalize {
+    text-transform: capitalize; /* Capitalize text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sec2 {
+        padding: 20px; /* Adjust padding on smaller screens */
+        height: auto; /* Allow height to adjust on smaller screens */
+    }
+
+    .left-section, .right-section {
+        width: 100%; /* Ensure sections take full width */
+        padding: 10px; /* Adjust padding on smaller screens */
+    }
+
+    
+}
+.right-section h2{
+    text-align: left;
+}
+.contactus{
+    width: 150px;
+
+}
+.right-section, .left-section h2 p{
+    text-transform: uppercase;
+
+    
+}
+.right-section h2 {
+    font-size: 29px; /* Font size for the heading */
+    font-weight: 600; /* Font weight for the heading */
+  
+    font-family: 'Vissa', 'Roboto Condensed';}
+
+.right-section  p{
+    font-weight: 300;
+    font-family: 'Houschka', 'Roboto Condensed';
+    text-transform: capitalize;
+}
