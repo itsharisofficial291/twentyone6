@@ -215,7 +215,7 @@ text-align: center;
     
 }
 
-.right-section h2 {
+.right-section h1 {
     font-size: 3.7em; /* Adjust heading font size */
     font-weight: 200;
     margin-bottom: 20px; /* Space below the heading */
@@ -240,7 +240,7 @@ text-align: center;
 
 /* Responsive adjustments for different screen sizes */
 @media (max-width: 1200px) {
-    .right-section h2 {
+    .right-section h1 {
         font-size: 2rem; /* Adjust heading size for medium screens */
     }
     .right-section p {
@@ -249,7 +249,7 @@ text-align: center;
 }
 
 @media (max-width: 992px) {
-    .right-section h2 {
+    .right-section h1 {
         font-size: 1.75rem; /* Smaller font size for headings */
     }
     .right-section p {
@@ -265,7 +265,7 @@ text-align: center;
     .sec2 {
         padding: 3%; /* Reduce padding on smaller screens */
     }
-    .right-section h2 {
+    .right-section h1 {
         font-size: 1.5rem; /* Smaller font size for headings */
     }
     .right-section p {
@@ -274,7 +274,7 @@ text-align: center;
 }
 
 @media (max-width: 576px) {
-    .right-section h2 {
+    .right-section h1 {
         font-size: 1.25rem; /* Further reduction in heading size */
     }
     .right-section p {
@@ -328,7 +328,7 @@ text-align: center;
 }
 .sec3 .title h2 {
     font-size: 36px;
-    font-weight: bold;
+
     margin: 0;
     text-transform: uppercase;
 }
@@ -471,7 +471,7 @@ text-align: center;
 .sec4 .title h2 {
     text-align: center; /* Center-align the title */
     margin-bottom: 20px; /* Space below the title */
-    color: #fff; /* Optional: Adjust text color for visibility */
+    color: #FFEADF; /* Optional: Adjust text color for visibility */
     padding: 20px;
     font-size: 2rem;
     font-family: "Vissa";
@@ -509,7 +509,7 @@ text-align: center;
     margin-bottom: 20px; /* Space below the title */
     color: #000000; /* Optional: Adjust text color for visibility */
     padding: 20px;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     font-family: "Vissa";
     text-transform: uppercase;
@@ -632,6 +632,7 @@ text-align: center;
 .sec6 .title h2{
     font-size: 0.5em;
 }
+
 
 @media (max-width: 768px) {
     .sec6 {
