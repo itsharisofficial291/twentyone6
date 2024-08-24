@@ -845,9 +845,9 @@ a:hover {
 .sec6 .title2 {
     padding-top: 10%;
     color: white;
-
+    font-size: 3em;
     text-transform: uppercase;
-    width: 45%;
+    width: 45vw;
     font-family: 'Vissa';
 
 }
@@ -928,7 +928,7 @@ a {
     color: white;
     font-size: 3em;
     text-transform: uppercase;
-    width: 80%;
+    width: 80vw;
     font-family: 'Vissa';
 
 }
@@ -1037,4 +1037,16 @@ justify-content: first baseline;
     .container3 .box {
         padding: 20px; /* Reduced padding for smaller screens */
     }
+    
+    .sec6 .title2{
+        font-size: 29px;
+        width: 100%;
+        text-align: center;
+    }
+    .sec6 .title3{
+        font-size: 29px;
+        width: 100%;
+        text-align: center;
+    }
+     
 }
