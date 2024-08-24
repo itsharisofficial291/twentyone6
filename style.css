@@ -641,15 +641,16 @@ text-align: center;
 
 
 
-
 .sec6 .button {
     display: flex;
-    align-items: center; /* Center content vertically within the button */
-    /* padding: 10px 20px; */ /* Padding inside the button */
-    border-radius: 5px; /* Rounded corners for the button */
-    color: rgb(255, 255, 255); /* Text color for button text */
-    /* margin-top: 20px; */ /* Space between title and button */
+    align-items: center;
+    /* padding: 10px 20px; */
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    /* margin-top: 20px; */
     left: 10%;
+    /* height: 20px; */
+    height: 20%;
 }
 
 
@@ -661,9 +662,10 @@ text-align: center;
 
 
 .sec6 .button-text {
-    font-size: 0.9rem; /* Font size for the button text */
-    color: #ffffff; /* Text color */
-    margin: 0; /* Remove default margin */
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Houschka Alt W03 Medium';
+    margin: 0;
 }
 
 /* Responsive adjustments */
