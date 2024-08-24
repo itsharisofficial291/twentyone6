@@ -55,13 +55,17 @@
     padding-left: 0;
     margin: 0;
     text-align: center;
+    text-transform: uppercase;
+    color: grey;
 }
 
 .breadcrumb-title {
-    font-size: 35px;
-    font-weight: bold;
+    /* font-size: 35px; */
+    /* font-weight: bold; */
+    font-size: 3em;
     color: #ffffff;
-    margin-bottom: 10px; /* Space between the title and breadcrumb links */
+    text-transform: uppercase;
+    /* margin-bottom: 10px; */
 }
 
 .breadcrumb-items ol {
@@ -80,8 +84,13 @@
     margin: 0 5px;
     color: #ffffff; /* Color of the slash separator */
 }
-
-.breadcrumb-item a {
+.breadcrumb-item a{
+    color: #737374;
+    font-family: 'Houschka Alt W03 Medium';
+    font-size: 0.9em;
+    gap: 30%;
+}
+.breadcrumb-item a:hover {
     text-decoration: none;
     color: #ffffff;
 }
@@ -127,10 +136,11 @@ text-align: center;
 }
 
 .slash {
-    color: white;
+    color: #737374;
     padding-left: 25px;
     padding-right: 25px;
-    font-size: 5-px;
+    font-size: 15px;
+    font-weight: bolder;
 }
 
 /* Responsive Design */
@@ -156,7 +166,7 @@ text-align: center;
     }
 
     .breadcrumb-title {
-        font-size: 20px; /* Adjust font size for smaller screens */
+        font-size: 1.6em;    
     }
 
     .breadcrumb-items ol {
@@ -206,7 +216,7 @@ text-align: center;
 }
 
 .right-section h2 {
-    font-size: 3rem; /* Adjust heading font size */
+    font-size: 3.7em; /* Adjust heading font size */
     font-weight: 200;
     margin-bottom: 20px; /* Space below the heading */
     font-family: 'Vissa';
@@ -320,6 +330,7 @@ text-align: center;
     font-size: 36px;
     font-weight: bold;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .slides {
@@ -457,7 +468,7 @@ text-align: center;
     padding: 5%; /* Padding around the content */
 }
 
-.title h2 {
+.sec4 .title h2 {
     text-align: center; /* Center-align the title */
     margin-bottom: 20px; /* Space below the title */
     color: #fff; /* Optional: Adjust text color for visibility */
@@ -467,23 +478,23 @@ text-align: center;
     text-transform: uppercase;
 }
 
-.companies, .companies2 {
+.sec4 .companies, .companies2 {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of images */
     justify-content: center; /* Center images within the container */
     gap: 100px; /* Space between images */
 }
 
-.companies img, .companies2 img {
+.sec4 .companies img, .companies2 img {
     max-width: 120px; /* Adjust the maximum width of images */
     height: auto; /* Maintain aspect ratio */
 }
 
-.companies {
+.sec4 .companies {
     margin-bottom: 20px; /* Space between rows */
 }
 
-.companies2 {
+.sec4 .companies2 {
     justify-content: center; /* Center the last two images */
 }
 /* Responsive adjustments */
@@ -616,7 +627,10 @@ text-align: center;
     text-align: center; /* Center text */
     z-index: 1; /* Ensure it is above .banner-img */
     text-transform: uppercase; /* Transform text to uppercase */
-    font-size: 2rem; /* Default font size for larger screens */
+    gap: 30px;
+}
+.sec6 .title h2{
+    font-size: 0.5em;
 }
 
 @media (max-width: 768px) {
@@ -626,18 +640,17 @@ text-align: center;
         box-sizing: border-box; /* Include padding and border in element's total width and height */
         padding-top: 20%; /* Add padding to the section */
     }
-    .sec6 .title {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
-
+    .sec6 .title h2{
+        font-size: 30px;
     }
 }
 
 @media (max-width: 480px) {
-    .sec6 .title {
-        font-size: 0.70rem; /* Further adjust font size for very small screens */
-
+    .sec6 .title h2{
+        font-size: 15px;
     }
 }
+
 
 
 
@@ -703,4 +716,13 @@ text-align: center;
 
 .sec6 .button .arrow{
     width: 2rem;
+}
+a:hover{
+    text-decoration: none;
+    
+}
+a {
+    
+    text-decoration: none;
+    /* background-color: transparent; */
 }

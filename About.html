@@ -6,14 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-    <head>
       <!-- Include Bootstrap CSS -->
+       <style>
+        a:hover{
+    text-decoration: none;
+    
+}
+a {
+    
+    text-decoration: none;
+    /* background-color: transparent; */
+}
+
+       </style>
       <link
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         rel="stylesheet"
       />
     </head>
-  </head>
+
   <body>
     <div id="main">
       <nav aria-label="breadcrumb" class="breadcrumb">
@@ -30,7 +41,7 @@
           <ol>
             <li class="breadcrumb-item active" aria-current="page">
               <a href="#">Home</a>
-              <div class="slash">></div>
+              <div class="slash">/</div>
               <a href="#">Home</a>
             </li>
           </ol>
@@ -188,11 +199,14 @@
             <div class="banner">
                 <div class="title">
                     <h2>Ready to Work Together?</h2>
-                    <div class="button">
+                
+                    <div class="button" href="#">
                         <img src="images/gola.png" alt="Gola Image" class="button-img">
-                        <p class="button-text">Build Together</p>
+                        <a class="button-text" href="#">Build Together
                         <img src="images/next.png" alt="" class="arrow">
+                    </a>
                     </div>
+    
                 </div>
             </div>
         </div>
