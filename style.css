@@ -692,3 +692,91 @@ a:hover {
         margin-top: 20px;
     }
 }
+.sec6 .title2{
+padding-top: 10%;
+color: white;
+
+text-transform: uppercase;
+width: 45%;
+font-family: 'Vissa';
+
+}
+/* Adjust left and right sections for medium to larger screens */
+.left-section2 {
+    flex: 0 0 40%; /* Set left section to 40% width */
+    color: white;
+    background-color: white;
+  }
+  
+  right-section2 {
+    flex: 0 0 60%; /* Set right section to 60% width */
+    color: white;
+  }
+  .right-section2{
+    text-transform: lowercase;
+    color: white;
+  }
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .left-section2,
+    .right-section2 {
+      flex: 0 0 100%; /* Full width for both sections on smaller screens */
+    }
+  }
+  
+  /* Additional styling for better layout appearance */
+  .right-section2 h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .right-section2 p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .right-section2 .button {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .right-section2 .button-img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .right-section2 .button-text {
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Houschka Alt W03 Medium';
+    margin: 0;
+    margin-left: -50px;
+    text-transform: uppercase;
+  }
+  
+  .right-section2 .arrow {
+    width: 1.5rem;
+    margin-left: 5px;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .sec6 .title3{
+    padding-top: 10%;
+    color: white;
+    font-size: 3em;
+    text-transform: uppercase;
+    width: 70%;
+    font-family: 'Vissa';
+    
+    }
+
+    .container2{
+padding: 20px;
+    }    
