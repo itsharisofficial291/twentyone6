@@ -510,7 +510,7 @@ text-align: center;
     color: #000000; /* Optional: Adjust text color for visibility */
     padding: 20px;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
     font-family: "Vissa";
     text-transform: uppercase;
 }
@@ -575,105 +575,62 @@ text-align: center;
 
     .text p {
         font-size: 0.875rem; /* Adjust font size for smaller screens */
-    }
+    }   
 }
-
-/* Sec6 */
 
 .sec6 {
-    background-color: #1A1A1A; /* Background color */
+    background-color: #1A1A1A;
+    background-image: url(images/Philosophy1.png);
+    background-size: cover;
     width: 100%;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-    padding: 6% 10% 10% 10%; /* Add padding to the section */
+    height: auto; /* Change to auto for better responsiveness */
+    box-sizing: border-box;
+    padding: 6% 10% 10% 10%;
+    position: relative; /* Ensure relative positioning for absolute elements inside */
 }
 
-
-.sec6 .philosophy {
+.sec6 .banner {
+    padding: 10%;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    text-align: center; /* Center text */
-    position: relative; /* Position relative for absolute positioning within */
-}
-
-
-.sec6 .philosophy-img {
-    mix-blend-mode: exclusion; /* Apply blend mode */
-    width: 100%; /* Make image responsive */
-    max-width: 100%; /* Set a maximum width for the image */
-    height: auto; /* Maintain aspect ratio */
-}
-
-
-.sec6  .banner {
-    position: absolute; /* Position absolutely within .philosophy */
-    margin-bottom: 25%;
-    display: flex;
-    flex-direction: column; /* Stack button and text vertically */
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    background-image: url(images/bgbanner.png); /* Background image for the banner */
-    background-position: center; /* Center the background image */
-    width: 100%; /* Full width of the parent container */
-    height: 70vh;
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/bgbanner.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto; /* Change to auto for better responsiveness */
+    box-sizing: border-box;
 }
 
 .sec6 .title {
     display: flex;
-    flex-direction: column; /* Stack button and text vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text */
-    z-index: 1; /* Ensure it is above .banner-img */
-    text-transform: uppercase; /* Transform text to uppercase */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    text-transform: uppercase;
     gap: 30px;
 }
-.sec6 .title h2{
+
+.sec6 .title h2 {
     font-size: 0.5em;
 }
-
-
-@media (max-width: 768px) {
-    .sec6 {
-        background-color: #1A1A1A; /* Background color */
-        width: 100%;
-        box-sizing: border-box; /* Include padding and border in element's total width and height */
-        padding-top: 20%; /* Add padding to the section */
-    }
-    .sec6 .title h2{
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-    .sec6 .title h2{
-        font-size: 15px;
-    }
-}
-
-
-
 
 .sec6 .button {
     display: flex;
     align-items: center;
-    /* padding: 10px 20px; */
     border-radius: 5px;
-    color: rgb(255, 255, 255);
-    /* margin-top: 20px; */
-    left: 10%;
-    /* height: 20px; */
+    color: #ffffff;
     height: 20%;
+    left: 10%;
 }
-
 
 .sec6 .button-img {
-    width: 60px; /* Set image size */
-    height: auto; /* Maintain aspect ratio */
+    width: 60px;
+    height: auto;
     margin-right: -40px;
 }
-
 
 .sec6 .button-text {
     font-size: 1rem;
@@ -682,48 +639,56 @@ text-align: center;
     margin: 0;
 }
 
+.sec6 .button .arrow {
+    width: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
-   
+    .sec6 {
+        padding-top: 20%;
+    }
+
+    .sec6 .title h2 {
+        font-size: 30px;
+    }
+
     .sec6 .banner {
-        position: absolute; /* Remove absolute positioning for small screens */
-        margin-top: 0; /* Reset margin-top */
-        height: auto; /* Adjust height to auto */
+        position: static; /* Remove absolute positioning for small screens */
+        margin-top: 0;
+        height: auto;
         background-repeat: no-repeat;
-        /* padding-top: 20%; */
-        height: 80%;
+        height: 60%;
+        padding-top: 10%;
     }
 
     .sec6 .title {
-        /* margin-top: 20px; */ /* Adjust margin for title if needed */
         font-size: 20px;
     }
 
-   
-
     .sec6 .button-img {
-        margin-bottom: 5px; /* Space between image and text */
+        margin-bottom: 5px;
     }
 
     .sec6 .arrow {
-        width: 1.5rem; /* Adjust size of the arrow icon */
+        width: 1.5rem;
     }
 }
-@media (max-width: 480px){
-.sec6 .button{
-    margin-top: 20px;
-}
-}
 
-.sec6 .button .arrow{
-    width: 2rem;
-}
-a:hover{
-    text-decoration: none;
-    
-}
-a {
-    
-    text-decoration: none;
-    /* background-color: transparent; */
+@media (max-width: 480px) {
+    .sec6 .title h2 {
+        font-size: 15px;
+    }
+
+    .sec6 .button {
+        margin-top: 20px;
+    }
 }
