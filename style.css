@@ -6,6 +6,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 #main {
     width: 100%;
     padding: 0;
@@ -15,15 +16,17 @@
 
 .breadcrumb {
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    align-items: center; /* Center items vertically */
+    justify-content: flex-start;
+    /* Align items to the left */
+    align-items: center;
+    /* Center items vertically */
     background-color: #f9f9f9;
-    background-image: url('images/overlay.png'); 
+    background-image: url('images/overlay.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 40vh;
     position: relative;
-    margin-bottom: 0rem !important; 
+    margin-bottom: 0rem !important;
     font-family: 'Vissa', 'Roboto Condensed';
 
 }
@@ -35,8 +38,10 @@
     height: 41.38px;
     position: absolute;
     top: 28.23px;
-    left: 260px; /* Adjusted left to be closer to the edge */
-    opacity: 1; /* Ensure logo is visible */
+    left: 260px;
+    /* Adjusted left to be closer to the edge */
+    opacity: 1;
+    /* Ensure logo is visible */
 }
 
 .logo {
@@ -47,10 +52,14 @@
 
 .breadcrumb-items {
     display: flex;
-    flex-direction: column; /* Align title and breadcrumb vertically */
-    align-items: center; /* Center breadcrumb items */
-    justify-content: center; /* Center the container itself */
-    width: 100%; /* Make the breadcrumb items container full width */
+    flex-direction: column;
+    /* Align title and breadcrumb vertically */
+    align-items: center;
+    /* Center breadcrumb items */
+    justify-content: center;
+    /* Center the container itself */
+    width: 100%;
+    /* Make the breadcrumb items container full width */
     list-style: none;
     padding-left: 0;
     margin: 0;
@@ -75,28 +84,33 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+    flex-wrap: wrap;
+    /* Allow wrapping to prevent overflow */
 
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     content: "/";
     margin: 0 5px;
-    color: #ffffff; /* Color of the slash separator */
+    color: #ffffff;
+    /* Color of the slash separator */
 }
-.breadcrumb-item a{
+
+.breadcrumb-item a {
     color: #737374;
     font-family: 'Houschka Alt W03 Medium';
     font-size: 0.9em;
     gap: 30%;
 }
+
 .breadcrumb-item a:hover {
     text-decoration: none;
     color: #ffffff;
 }
 
 .breadcrumb-item.active {
-    color: #cccccc; /* Active breadcrumb color */
+    color: #cccccc;
+    /* Active breadcrumb color */
 }
 
 .breadcrumb-item a:hover {
@@ -109,19 +123,21 @@
     margin-right: 10px;
     color: #FFFFFF;
     font-family: Vissa;
-font-size: 95px;
-font-weight: 400;
-line-height: 66px;
-letter-spacing: 0.04em;
-text-align: center;
+    font-size: 95px;
+    font-weight: 400;
+    line-height: 66px;
+    letter-spacing: 0.04em;
+    text-align: center;
 
 }
 
 .link {
     font-size: 14px;
     display: flex;
-    justify-content: center; /* Center the links */
-    width: 100%; /* Ensure the links take up the full width */
+    justify-content: center;
+    /* Center the links */
+    width: 100%;
+    /* Ensure the links take up the full width */
 }
 
 .link a {
@@ -146,34 +162,42 @@ text-align: center;
 /* Responsive Design */
 @media (max-width: 768px) {
     .breadcrumb {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: flex-start; /* Align breadcrumb items to start */
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        align-items: flex-start;
+        /* Align breadcrumb items to start */
         padding: 10px;
-        height: auto; /* Adjust height */
+        height: auto;
+        /* Adjust height */
     }
 
     .logo-container {
-        position: relative; /* Make logo part of document flow */
+        position: relative;
+        /* Make logo part of document flow */
         top: 0;
         left: 0;
-        margin-bottom: 10px; /* Space between logo and breadcrumb items */
+        margin-bottom: 10px;
+        /* Space between logo and breadcrumb items */
     }
 
     .breadcrumb-items {
-        align-items: center; /* Center breadcrumb items */
+        align-items: center;
+        /* Center breadcrumb items */
         text-align: center;
-        width: 100%; /* Make it take full width */
+        width: 100%;
+        /* Make it take full width */
     }
 
     .breadcrumb-title {
-        font-size: 1.6em;    
+        font-size: 1.6em;
     }
 
     .breadcrumb-items ol {
-        flex-direction: column; /* Stack breadcrumb items vertically */
+        flex-direction: column;
+        /* Stack breadcrumb items vertically */
     }
 
- 
+
 
 }
 
@@ -181,110 +205,153 @@ text-align: center;
     width: 100%;
     background: #FFEADF;
     background-image: url(images/brand-essense1.png);
-    padding: 5%; /* Adjust padding for responsiveness */
+    padding: 5%;
+    /* Adjust padding for responsiveness */
     box-sizing: border-box;
     font-family: 'Vissa', 'Roboto Condensed';
 }
 
 .container {
     width: 100%;
-    display: table; /* Using table display for container */
-    table-layout: auto; /* Allow the table to auto-layout */
+    display: table;
+    /* Using table display for container */
+    table-layout: auto;
+    /* Allow the table to auto-layout */
     padding-top: 7%;
     padding-bottom: 10%;
 }
 
 .row {
-    display: table-row; /* Use table-row to act as a row */
+    display: table-row;
+    /* Use table-row to act as a row */
 }
 
-.left-section, .right-section {
-    display: table-cell; /* Use table-cell to act as a cell */
-    padding: 20px; /* Padding for the table cells */
-    vertical-align: middle; /* Vertically center content in the cell */
-    width: 50%; /* Default width for each section in the table */
-  
+.left-section,
+.right-section {
+    display: table-cell;
+    /* Use table-cell to act as a cell */
+    padding: 20px;
+    /* Padding for the table cells */
+    vertical-align: middle;
+    /* Vertically center content in the cell */
+    width: 50%;
+    /* Default width for each section in the table */
+
 }
 
 .right-section {
     text-align: left;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: flex-start; /* Align content to the top */
-    width: 50%; /* Use 50% width to match left-section */
-    
+    flex-direction: column;
+    /* Stack elements vertically */
+    justify-content: flex-start;
+    /* Align content to the top */
+    width: 50%;
+    /* Use 50% width to match left-section */
+
 }
 
 .right-section h1 {
-    font-size: 3.7em; /* Adjust heading font size */
+    font-size: 3.7em;
+    /* Adjust heading font size */
     font-weight: 200;
-    margin-bottom: 20px; /* Space below the heading */
+    margin-bottom: 20px;
+    /* Space below the heading */
     font-family: 'Vissa';
-    
+
 }
 
 .right-section p {
-    font-size: 1rem; /* Adjust paragraph font size */
-    line-height: 1.5; /* Improve readability */
-    margin-bottom: 20px; /* Space between text and other elements */
+    font-size: 1rem;
+    /* Adjust paragraph font size */
+    line-height: 1.5;
+    /* Improve readability */
+    margin-bottom: 20px;
+    /* Space between text and other elements */
     font-family: "Houschka Alt W03 Medium";
     text-transform: uppercase;
 }
-.contactus{
+
+.contactus {
     width: 33%;
 }
+
 .img-fluid {
-    max-width: 100%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Ensure images are responsive */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 /* Responsive adjustments for different screen sizes */
 @media (max-width: 1200px) {
     .right-section h1 {
-        font-size: 2rem; /* Adjust heading size for medium screens */
+        font-size: 2rem;
+        /* Adjust heading size for medium screens */
     }
+
     .right-section p {
-        font-size: 0.9rem; /* Adjust paragraph size for medium screens */
+        font-size: 0.9rem;
+        /* Adjust paragraph size for medium screens */
     }
 }
 
 @media (max-width: 992px) {
     .right-section h1 {
-        font-size: 1.75rem; /* Smaller font size for headings */
+        font-size: 1.75rem;
+        /* Smaller font size for headings */
     }
+
     .right-section p {
-        font-size: 0.85rem; /* Smaller font size for paragraphs */
+        font-size: 0.85rem;
+        /* Smaller font size for paragraphs */
     }
-    .left-section, .right-section {
-        width: 100%; /* Make sections take full width on smaller screens */
-        display: block; /* Change to block display for stacking */
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        /* Make sections take full width on smaller screens */
+        display: block;
+        /* Change to block display for stacking */
     }
 }
 
 @media (max-width: 768px) {
     .sec2 {
-        padding: 3%; /* Reduce padding on smaller screens */
+        padding: 3%;
+        /* Reduce padding on smaller screens */
     }
+
     .right-section h1 {
-        font-size: 1.5rem; /* Smaller font size for headings */
+        font-size: 1.5rem;
+        /* Smaller font size for headings */
     }
+
     .right-section p {
-        font-size: 0.8rem; /* Smaller font size for paragraphs */
+        font-size: 0.8rem;
+        /* Smaller font size for paragraphs */
     }
 }
 
 @media (max-width: 576px) {
     .right-section h1 {
-        font-size: 1.25rem; /* Further reduction in heading size */
+        font-size: 1.25rem;
+        /* Further reduction in heading size */
     }
+
     .right-section p {
-        font-size: 0.75rem; /* Further reduction in paragraph size */
+        font-size: 0.75rem;
+        /* Further reduction in paragraph size */
     }
+
     .contactus {
-        max-width: 80px;  /* Smaller image size for mobile */
+        max-width: 80px;
+        /* Smaller image size for mobile */
     }
+
     .sec2 {
-        padding: 2%; /* Further reduction for smaller devices */
+        padding: 2%;
+        /* Further reduction for smaller devices */
     }
 }
 
@@ -300,7 +367,8 @@ text-align: center;
     justify-content: center;
     padding: 20px 20px;
     box-sizing: border-box;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
 }
 
 .sec3 .title {
@@ -321,11 +389,14 @@ text-align: center;
     margin-top: 10px;
     gap: 20px;
 }
-.prevbuttons img{
-   width: 22%; /* Adjust the size of images */
+
+.prevbuttons img {
+    width: 22%;
+    /* Adjust the size of images */
     left: 80%;
-    height: auto;  
+    height: auto;
 }
+
 .sec3 .title h2 {
     font-size: 36px;
 
@@ -336,7 +407,8 @@ text-align: center;
 .slides {
     display: flex;
     width: 100%;
-    transition: transform 0.5s ease; /* Smooth transition for slide movement */
+    transition: transform 0.5s ease;
+    /* Smooth transition for slide movement */
     gap: 20px;
     padding-bottom: 80px;
 }
@@ -344,7 +416,8 @@ text-align: center;
 .slide {
     flex: 1 1 250px;
     min-width: 270px;
-    max-width: 250px; /* Define the max width for normal slides */
+    max-width: 250px;
+    /* Define the max width for normal slides */
     background-color: #1A1A1A;
     padding: 10px;
     border-radius: 10px;
@@ -354,18 +427,22 @@ text-align: center;
 }
 
 .half-slide {
-    flex: 1 1 125px; /* Half the flex basis of other slides */
-    max-width: 250px; /* Limit the max width to half of normal slides */
+    flex: 1 1 125px;
+    /* Half the flex basis of other slides */
+    max-width: 250px;
+    /* Limit the max width to half of normal slides */
 }
 
 @media (max-width: 768px) {
     .half-slide {
         flex: 1 1 100%;
-        max-width: 100%; /* Full width on smaller screens */
+        max-width: 100%;
+        /* Full width on smaller screens */
     }
 
     .slides {
-        flex-direction: column; /* Stack slides vertically on smaller screens */
+        flex-direction: column;
+        /* Stack slides vertically on smaller screens */
         align-items: center;
     }
 }
@@ -378,17 +455,20 @@ text-align: center;
     right: 0;
     bottom: 0;
     border: 2px solid transparent;
-    border-image: url('images/sec3vector.png') 30 round; /* Adjust path to your SVG file */
+    border-image: url('images/sec3vector.png') 30 round;
+    /* Adjust path to your SVG file */
     border-image-slice: 1;
-    pointer-events: none; /* Ensure the border does not interfere with interactions */
+    pointer-events: none;
+    /* Ensure the border does not interfere with interactions */
 }
 
 .slide-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Make content take full width of slide */
-  
+    width: 100%;
+    /* Make content take full width of slide */
+
     padding: 0px;
 }
 
@@ -396,26 +476,32 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: left;
-    width: 100%; /* Ensure it takes full width of the slide */
-    margin-bottom: 11px; /* Space below the title and image */
-    
+    width: 100%;
+    /* Ensure it takes full width of the slide */
+    margin-bottom: 11px;
+    /* Space below the title and image */
+
 }
 
 .slide-content h3 {
-    font-size: 20px; /* Adjust font size as needed */
-    color: #86193d; /* Color for the heading */
-   /* Space between heading and image */
+    font-size: 20px;
+    /* Adjust font size as needed */
+    color: #86193d;
+    /* Color for the heading */
+    /* Space between heading and image */
     width: 100%;
     text-align: start;
     font-weight: 700;
 }
 
 .slide-content img {
-    width: 30%; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
- 
+    width: 30%;
+    /* Adjust width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+
     height: 50%;
-   
+
 }
 
 .slide-content p {
@@ -423,91 +509,122 @@ text-align: center;
     padding-top: 20px;
     text-align: start;
     font-weight: 300;
-    font-family: "Houschka";
+    font-family: 'Houschka Alt W03 Medium';
 }
 
 /* Responsive adjustments */
 /* Responsive Styles for Tablets and Larger Devices */
 @media (min-width: 769px) and (max-width: 1024px) {
     .slide {
-        min-width: calc(33.33% - 20px); /* Show 3 slides at a time with space for gap */
-        max-width: calc(33.33% - 20px); /* Adjust for the gap */
+        min-width: calc(33.33% - 20px);
+        /* Show 3 slides at a time with space for gap */
+        max-width: calc(33.33% - 20px);
+        /* Adjust for the gap */
     }
 }
 
 /* Responsive Styles for Mobile Devices */
 @media (max-width: 768px) {
     .slide {
-        min-width: calc(50% - 20px); /* Show 2 slides at a time with space for gap */
-        max-width: calc(50% - 20px); /* Adjust for the gap */
+        min-width: calc(50% - 20px);
+        /* Show 2 slides at a time with space for gap */
+        max-width: calc(50% - 20px);
+        /* Adjust for the gap */
     }
 
     .slides {
-        flex-direction: row; /* Keep slides in a row direction for horizontal scrolling */
+        flex-direction: row;
+        /* Keep slides in a row direction for horizontal scrolling */
     }
 }
 
 /* Responsive Styles for Smaller Mobile Devices */
 @media (max-width: 480px) {
     .slide {
-        min-width: 100%; /* Show 1 slide at a time */
-        max-width: 100%; /* Ensure slides take up full width */
-        margin-bottom: 20px; /* Space between slides */
+        min-width: 100%;
+        /* Show 1 slide at a time */
+        max-width: 100%;
+        /* Ensure slides take up full width */
+        margin-bottom: 20px;
+        /* Space between slides */
     }
-    
+
     .slides {
-        gap: 10px; /* Reduce gap between slides */
+        gap: 10px;
+        /* Reduce gap between slides */
     }
 }
 
 .sec4 {
     width: 100%;
     height: 100%;
-    background: linear-gradient(220deg, #58182C 20%, #262223 60%); /* Linear gradient color */
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
-    padding: 5%; /* Padding around the content */
+    background: linear-gradient(220deg, #58182C 20%, #262223 60%);
+    /* Linear gradient color */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the element's total width and height */
+    padding: 5%;
+    /* Padding around the content */
 }
 
 .sec4 .title h2 {
-    text-align: center; /* Center-align the title */
-    margin-bottom: 20px; /* Space below the title */
-    color: #FFEADF; /* Optional: Adjust text color for visibility */
+    text-align: center;
+    /* Center-align the title */
+    margin-bottom: 20px;
+    /* Space below the title */
+    color: #FFEADF;
+    /* Optional: Adjust text color for visibility */
     padding: 20px;
     font-size: 2rem;
     font-family: "Vissa";
     text-transform: uppercase;
 }
 
-.sec4 .companies, .companies2 {
+.sec4 .companies,
+.companies2 {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping of images */
-    justify-content: center; /* Center images within the container */
-    gap: 100px; /* Space between images */
+    flex-wrap: wrap;
+    /* Allow wrapping of images */
+    justify-content: center;
+    /* Center images within the container */
+    gap: 100px;
+    /* Space between images */
 }
 
-.sec4 .companies img, .companies2 img {
-    max-width: 120px; /* Adjust the maximum width of images */
-    height: auto; /* Maintain aspect ratio */
+.sec4 .companies img,
+.companies2 img {
+    max-width: 120px;
+    /* Adjust the maximum width of images */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .sec4 .companies {
-    margin-bottom: 20px; /* Space between rows */
+    margin-bottom: 20px;
+    /* Space between rows */
 }
 
 .sec4 .companies2 {
-    justify-content: center; /* Center the last two images */
+    justify-content: center;
+    /* Center the last two images */
 }
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .companies img, .companies2 img {
-        max-width: 80px; /* Adjust image size for smaller screens */
+
+    .companies img,
+    .companies2 img {
+        max-width: 80px;
+        /* Adjust image size for smaller screens */
     }
 }
 
 .sec5 .title h2 {
-    text-align: center; /* Center-align the title */
-    margin-bottom: 20px; /* Space below the title */
-    color: #000000; /* Optional: Adjust text color for visibility */
+    text-align: center;
+    /* Center-align the title */
+    margin-bottom: 20px;
+    /* Space below the title */
+    color: #000000;
+    /* Optional: Adjust text color for visibility */
     padding: 20px;
     font-size: 2rem;
     font-weight: 600;
@@ -517,41 +634,61 @@ text-align: center;
 
 
 .sec5 {
-    background-color: #FFEADF; /* Background color */
+    background-color: #FFEADF;
+    /* Background color */
     width: 100%;
-    padding: 5%; /* Padding around the content */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
-    justify-content: space-around; /* Distribute space evenly between items */
-    align-items: center; /* Center items vertically within the container */
+    padding: 5%;
+    /* Padding around the content */
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+    display: flex;
+    /* Use flexbox for layout */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line if needed */
+    justify-content: space-around;
+    /* Distribute space evenly between items */
+    align-items: center;
+    /* Center items vertically within the container */
 }
 
-.sec5  .title {
-    width: 100%; /* Make title span full width */
-    text-align: center; /* Center-align title */
-    margin-bottom: 20px; /* Space below the title */
+.sec5 .title {
+    width: 100%;
+    /* Make title span full width */
+    text-align: center;
+    /* Center-align title */
+    margin-bottom: 20px;
+    /* Space below the title */
 }
 
-.sec5  .project {
+.sec5 .project {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    margin: 10px; /* Space between projects */
-    flex: 1 1 30%; /* Allow items to grow and shrink, with a basis of 30% width */
+    align-items: center;
+    /* Center content horizontally */
+    margin: 10px;
+    /* Space between projects */
+    flex: 1 1 30%;
+    /* Allow items to grow and shrink, with a basis of 30% width */
 }
 
-.sec5  .number {
-    font-size: 4rem; /* Font size for the number */
-    font-weight: bold; /* Make the number bold */
-    color: #58182C; /* Text color for the number */
-    margin-bottom: 10px; /* Space below the number */
+.sec5 .number {
+    font-size: 4rem;
+    /* Font size for the number */
+    font-weight: bold;
+    /* Make the number bold */
+    color: #58182C;
+    /* Text color for the number */
+    margin-bottom: 10px;
+    /* Space below the number */
 }
 
-.sec5  .text p {
-    font-size: 1rem; /* Adjust paragraph font size */
-    line-height: 1.5; /* Improve readability */
-    margin-bottom: 20px; /* Space between text and other elements */
+.sec5 .text p {
+    font-size: 1rem;
+    /* Adjust paragraph font size */
+    line-height: 1.5;
+    /* Improve readability */
+    margin-bottom: 20px;
+    /* Space between text and other elements */
     font-family: "Houschka Alt W03 Medium";
     text-transform: uppercase;
 }
@@ -559,34 +696,44 @@ text-align: center;
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .sec5 {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
     }
 
     .project {
-        flex: 1 1 auto; /* Allow items to grow and shrink */
-        max-width: 100%; /* Take full width of the container */
-        margin: 10px 0; /* Space between projects */
+        flex: 1 1 auto;
+        /* Allow items to grow and shrink */
+        max-width: 100%;
+        /* Take full width of the container */
+        margin: 10px 0;
+        /* Space between projects */
     }
 
     .number {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
     }
 
     .text p {
-        font-size: 0.875rem; /* Adjust font size for smaller screens */
-    }   
+        font-size: 0.875rem;
+        /* Adjust font size for smaller screens */
+    }
 }
 
+/* Secton 6 */
 .sec6 {
     background-color: #1A1A1A;
     background-image: url(images/Philosophy1.png);
     background-size: cover;
     width: 100%;
-    height: auto; /* Change to auto for better responsiveness */
+    height: auto;
+    /* Change to auto for better responsiveness */
     box-sizing: border-box;
     padding: 6% 10% 10% 10%;
-    position: relative; /* Ensure relative positioning for absolute elements inside */
+    position: relative;
+    /* Ensure relative positioning for absolute elements inside */
 }
 
 .sec6 .banner {
@@ -599,7 +746,8 @@ text-align: center;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: auto; /* Change to auto for better responsiveness */
+    height: auto;
+    /* Change to auto for better responsiveness */
     box-sizing: border-box;
 }
 
@@ -633,7 +781,7 @@ text-align: center;
 }
 
 .sec6 .button-text {
-    font-size: 1rem;
+    font-size: 0.6rem;
     color: #ffffff;
     font-family: 'Houschka Alt W03 Medium';
     margin: 0;
@@ -662,7 +810,8 @@ a:hover {
     }
 
     .sec6 .banner {
-        position: static; /* Remove absolute positioning for small screens */
+        position: static;
+        /* Remove absolute positioning for small screens */
         margin-top: 0;
         height: auto;
         background-repeat: no-repeat;
@@ -692,90 +841,200 @@ a:hover {
         margin-top: 20px;
     }
 }
-.sec6 .title2{
-padding-top: 10%;
-color: white;
 
-text-transform: uppercase;
-width: 45%;
-font-family: 'Vissa';
+.sec6 .title2 {
+    padding-top: 10%;
+    color: white;
+
+    text-transform: uppercase;
+    width: 45%;
+    font-family: 'Vissa';
 
 }
+
 /* Adjust left and right sections for medium to larger screens */
 .left-section2 {
-    flex: 0 0 40%; /* Set left section to 40% width */
+    flex: 0 0 40%;
+    /* Set left section to 40% width */
     color: white;
     background-color: white;
-  }
-  
+}
 
-  .right-section2{
+
+.right-section2 {
     text-transform: lowercase;
     color: white;
-  }
-  /* Adjustments for smaller screens */
-  @media (max-width: 768px) {
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+
     .left-section2,
     .right-section2 {
-      flex: 0 0 100%; /* Full width for both sections on smaller screens */
+        flex: 0 0 100%;
+        /* Full width for both sections on smaller screens */
     }
-  }
-  
-  /* Additional styling for better layout appearance */
-  .right-section2 h1 {
+}
+
+/* Additional styling for better layout appearance */
+.right-section2 h1 {
     font-size: 1.6em;
-  
+
     font-family: 'Vissa';
-  }
-  
-  .right-section2 p {
-   
+}
+
+.right-section2 p {
+    line-height: 20px;
+    font-size: 0.9em;
     font-family: 'Houschka Alt W03 Medium';
-  }
-  
-  .right-section2 .button {
+}
+
+.right-section2 .button {
     display: flex;
     align-items: center;
-   
-  }
-  
-  .right-section2 .button-img {
+
+}
+
+.right-section2 .button-img {
     width: 60px;
     height: auto;
     margin-right: 10px;
-  }
-  
-  .right-section2 .button-text {
+}
+
+.right-section2 .button-text {
     font-size: 0.9rem;
     color: #ffffff;
     font-family: 'Houschka Alt W03 Medium';
     margin: 0;
     margin-left: -50px;
     text-transform: uppercase;
-  }
-  
-  .right-section2 .arrow {
+}
+
+.right-section2 .arrow {
     width: 1.5rem;
     margin-left: 5px;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: none;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
-  }
-  .sec6 .title3{
+}
+
+.sec6 .title3 {
     padding-top: 10%;
     color: white;
     font-size: 3em;
     text-transform: uppercase;
-    width: 70%;
+    width: 80%;
     font-family: 'Vissa';
-    
+
+}
+
+.container2 {
+    padding: 20px;
+}
+
+.sec6 .button2 {
+    text-align: end;
+    border-radius: 5px;
+    color: #ffffff;
+    left: 10%;
+    text-transform: uppercase;
+justify-content: first baseline;
+    font-family: 'Houschka Alt W03 Medium';
+}
+
+.sec6 .button-img {
+    width: 60px;
+    height: auto;
+    margin-right: -40px;
+}
+
+.sec6 .button-text {
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Houschka Alt W03 Medium';
+    margin: 0;
+}
+
+.sec6 .button2 .arrow {
+    width: 2rem;
+}
+
+@media (max-width: 480px) {
+    .sec6 .button2 {
+        text-align: center;
+        justify-self: flex-start;
     }
 
-    .container2{
-padding: 20px;
-    }    
+}
+/* Container Styles */
+.container3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    gap: 5%;
+    padding-top: 5%;
+}
+
+/* Box Styles */
+.container3 .box {
+    width: 30%; /* A third of the container width for larger screens */
+    height: auto;
+    background-color: #000000;
+    color: white;
+    font-family: 'Houschka Alt W03 Medium';
+    padding: 40px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 20px; /* Space between rows of boxes */
+}
+
+/* Responsive Text and Button Styles */
+.box h4 {
+    font-size: 18px;
+    width: 90%;
+    font-family: 'Vissa';
+}
+
+.box .button {
+    font-size: 14px;
+    width: 80%;
+}
+
+.box p {
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .container3 .box {
+        width: 45%; /* Two boxes per row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .container3 .box {
+        width: 100%; /* One box per row for small screens */
+    }
+    
+    .box h4, .box p, .box .button {
+        font-size: 16px; /* Adjusting font size for better readability */
+        width: 100%; /* Full width for content */
+    }
+}
+
+@media (max-width: 480px) {
+    .container3 {
+        padding-top: 10%; /* Adjust padding for very small screens */
+    }
+
+    .container3 .box {
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+}
