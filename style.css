@@ -708,10 +708,7 @@ font-family: 'Vissa';
     background-color: white;
   }
   
-  right-section2 {
-    flex: 0 0 60%; /* Set right section to 60% width */
-    color: white;
-  }
+
   .right-section2{
     text-transform: lowercase;
     color: white;
@@ -726,18 +723,20 @@ font-family: 'Vissa';
   
   /* Additional styling for better layout appearance */
   .right-section2 h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.6em;
+  
+    font-family: 'Vissa';
   }
   
   .right-section2 p {
-    margin-bottom: 1.5rem;
+   
+    font-family: 'Houschka Alt W03 Medium';
   }
   
   .right-section2 .button {
     display: flex;
     align-items: center;
-    margin-top: 1rem;
+   
   }
   
   .right-section2 .button-img {
@@ -747,7 +746,7 @@ font-family: 'Vissa';
   }
   
   .right-section2 .button-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #ffffff;
     font-family: 'Houschka Alt W03 Medium';
     margin: 0;
