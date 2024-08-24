@@ -1,3 +1,11 @@
+@import url(https://db.onlinewebfonts.com/c/0f0a2a649c29162612b9372a5f4d59fb?family=Houschka+Alt+W03+Medium);
+
+@font-face {
+    font-family: 'Vissa';
+    src: url('/font/Vissa.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 #main {
     width: 100%;
     padding: 0;
@@ -161,100 +169,116 @@ text-align: center;
 
 .sec2 {
     width: 100%;
-    height: auto;
     background: #FFEADF;
     background-image: url(images/brand-essense1.png);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10%; /* Padding around the container */
+    padding: 5%; /* Adjust padding for responsiveness */
     box-sizing: border-box;
     font-family: 'Vissa', 'Roboto Condensed';
 }
 
 .container {
-    height: 100%; /* Fixed height for container */
-    display: flex;
-    align-items: center; /* Center content vertically */
-    gap: 0; /* No gap between columns */
-    padding: 0; /* Remove default padding */
+    width: 100%;
+    display: table; /* Using table display for container */
+    table-layout: auto; /* Allow the table to auto-layout */
+    padding-top: 7%;
+    padding-bottom: 10%;
 }
 
 .row {
-    margin: 0; /* Remove default margin */
+    display: table-row; /* Use table-row to act as a row */
 }
 
 .left-section, .right-section {
-    display: flex;
-    align-items: left; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-}
-
-.left-section {
-    /* Additional styling for the left section */
-    padding: 20px; /* Adjust padding as needed */
+    display: table-cell; /* Use table-cell to act as a cell */
+    padding: 20px; /* Padding for the table cells */
+    vertical-align: middle; /* Vertically center content in the cell */
+    width: 50%; /* Default width for each section in the table */
+  
 }
 
 .right-section {
-    /* Additional styling for the right section */
-    padding: 20px; /* Adjust padding as needed */
-    text-align: left; /* Left-align text */
+    text-align: left;
     display: flex;
-    flex-direction: column; /* Ensure text elements stack vertically */
-    justify-content: left; /* Center content vertically within the section */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align content to the top */
+    width: 50%; /* Use 50% width to match left-section */
+    
 }
 
-.right-section h2, .right-section p {
-    margin: 0; /* Remove default margin */
+.right-section h2 {
+    font-size: 3rem; /* Adjust heading font size */
+    font-weight: 200;
+    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Vissa';
+    
 }
 
+.right-section p {
+    font-size: 1rem; /* Adjust paragraph font size */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 20px; /* Space between text and other elements */
+    font-family: "Houschka Alt W03 Medium";
+    text-transform: uppercase;
+}
+.contactus{
+    width: 33%;
+}
 .img-fluid {
     max-width: 100%; /* Ensure images are responsive */
     height: auto; /* Maintain aspect ratio */
 }
 
-.text-capitalize {
-    text-transform: capitalize; /* Capitalize text */
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 1200px) {
+    .right-section h2 {
+        font-size: 2rem; /* Adjust heading size for medium screens */
+    }
+    .right-section p {
+        font-size: 0.9rem; /* Adjust paragraph size for medium screens */
+    }
 }
 
-/* Responsive adjustments */
+@media (max-width: 992px) {
+    .right-section h2 {
+        font-size: 1.75rem; /* Smaller font size for headings */
+    }
+    .right-section p {
+        font-size: 0.85rem; /* Smaller font size for paragraphs */
+    }
+    .left-section, .right-section {
+        width: 100%; /* Make sections take full width on smaller screens */
+        display: block; /* Change to block display for stacking */
+    }
+}
+
 @media (max-width: 768px) {
     .sec2 {
-        padding: 20px; /* Adjust padding on smaller screens */
-        height: auto; /* Allow height to adjust on smaller screens */
+        padding: 3%; /* Reduce padding on smaller screens */
     }
-    
-
-    .container {
-        width: 100%; /* Ensure sections take full width */
-        padding-top: 10%; /* Adjust padding on smaller screens */
+    .right-section h2 {
+        font-size: 1.5rem; /* Smaller font size for headings */
     }
+    .right-section p {
+        font-size: 0.8rem; /* Smaller font size for paragraphs */
+    }
+}
 
-    
+@media (max-width: 576px) {
+    .right-section h2 {
+        font-size: 1.25rem; /* Further reduction in heading size */
+    }
+    .right-section p {
+        font-size: 0.75rem; /* Further reduction in paragraph size */
+    }
+    .contactus {
+        max-width: 80px;  /* Smaller image size for mobile */
+    }
+    .sec2 {
+        padding: 2%; /* Further reduction for smaller devices */
+    }
 }
-.right-section h2{
-    text-align: left;
-}
-.contactus{
-    width: 150px;
 
-}
-.right-section, .left-section h2 p{
-    text-transform: uppercase;
 
-    
-}
-.right-section h2 {
-    font-size: 29px; /* Font size for the heading */
-    font-weight: 600; /* Font weight for the heading */
-  
-    font-family: 'Vissa', 'Roboto Condensed';}
-
-.right-section  p{
-    font-weight: 300;
-    font-family: 'Houschka', 'Roboto Condensed';   
-    
-}
 .sec3 {
     width: 100%;
     height: 100%;
@@ -274,6 +298,8 @@ text-align: center;
     justify-content: center;
     margin-bottom: 40px;
     padding-top: 80px;
+    font-family: 'Vissa';
+    font-size: 3rem;
 }
 
 
@@ -382,9 +408,11 @@ text-align: center;
 }
 
 .slide-content p {
-    font-size: 13px;
+    font-size: 15px;
     padding-top: 20px;
     text-align: start;
+    font-weight: 300;
+    font-family: "Houschka";
 }
 
 /* Responsive adjustments */
@@ -419,4 +447,258 @@ text-align: center;
     .slides {
         gap: 10px; /* Reduce gap between slides */
     }
+}
+
+.sec4 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(220deg, #58182C 20%, #262223 60%); /* Linear gradient color */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    padding: 5%; /* Padding around the content */
+}
+
+.title h2 {
+    text-align: center; /* Center-align the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #fff; /* Optional: Adjust text color for visibility */
+    padding: 20px;
+    font-size: 2rem;
+    font-family: "Vissa";
+    text-transform: uppercase;
+}
+
+.companies, .companies2 {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of images */
+    justify-content: center; /* Center images within the container */
+    gap: 100px; /* Space between images */
+}
+
+.companies img, .companies2 img {
+    max-width: 120px; /* Adjust the maximum width of images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.companies {
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.companies2 {
+    justify-content: center; /* Center the last two images */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .companies img, .companies2 img {
+        max-width: 80px; /* Adjust image size for smaller screens */
+    }
+}
+
+.sec5 .title h2 {
+    text-align: center; /* Center-align the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #000000; /* Optional: Adjust text color for visibility */
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "Vissa";
+    text-transform: uppercase;
+}
+
+
+.sec5 {
+    background-color: #FFEADF; /* Background color */
+    width: 100%;
+    padding: 5%; /* Padding around the content */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: space-around; /* Distribute space evenly between items */
+    align-items: center; /* Center items vertically within the container */
+}
+
+.sec5  .title {
+    width: 100%; /* Make title span full width */
+    text-align: center; /* Center-align title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.sec5  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    margin: 10px; /* Space between projects */
+    flex: 1 1 30%; /* Allow items to grow and shrink, with a basis of 30% width */
+}
+
+.sec5  .number {
+    font-size: 4rem; /* Font size for the number */
+    font-weight: bold; /* Make the number bold */
+    color: #58182C; /* Text color for the number */
+    margin-bottom: 10px; /* Space below the number */
+}
+
+.sec5  .text p {
+    font-size: 1rem; /* Adjust paragraph font size */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 20px; /* Space between text and other elements */
+    font-family: "Houschka Alt W03 Medium";
+    text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sec5 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .project {
+        flex: 1 1 auto; /* Allow items to grow and shrink */
+        max-width: 100%; /* Take full width of the container */
+        margin: 10px 0; /* Space between projects */
+    }
+
+    .number {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .text p {
+        font-size: 0.875rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Sec6 */
+
+.sec6 {
+    background-color: #1A1A1A; /* Background color */
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    padding: 6% 10% 10% 10%; /* Add padding to the section */
+}
+
+
+.sec6 .philosophy {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    position: relative; /* Position relative for absolute positioning within */
+}
+
+
+.sec6 .philosophy-img {
+    mix-blend-mode: exclusion; /* Apply blend mode */
+    width: 100%; /* Make image responsive */
+    max-width: 100%; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.sec6  .banner {
+    position: absolute; /* Position absolutely within .philosophy */
+    margin-bottom: 25%;
+    display: flex;
+    flex-direction: column; /* Stack button and text vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    background-image: url(images/bgbanner.png); /* Background image for the banner */
+    background-position: center; /* Center the background image */
+    width: 100%; /* Full width of the parent container */
+    height: 70vh;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.sec6 .title {
+    display: flex;
+    flex-direction: column; /* Stack button and text vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    z-index: 1; /* Ensure it is above .banner-img */
+    text-transform: uppercase; /* Transform text to uppercase */
+    font-size: 2rem; /* Default font size for larger screens */
+}
+
+@media (max-width: 768px) {
+    .sec6 {
+        background-color: #1A1A1A; /* Background color */
+        width: 100%;
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+        padding-top: 20%; /* Add padding to the section */
+    }
+    .sec6 .title {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+
+    }
+}
+
+@media (max-width: 480px) {
+    .sec6 .title {
+        font-size: 0.70rem; /* Further adjust font size for very small screens */
+
+    }
+}
+
+
+
+
+.sec6 .button {
+    display: flex;
+    align-items: center; /* Center content vertically within the button */
+    /* padding: 10px 20px; */ /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    color: rgb(255, 255, 255); /* Text color for button text */
+    /* margin-top: 20px; */ /* Space between title and button */
+    left: 10%;
+}
+
+
+.sec6 .button-img {
+    width: 60px; /* Set image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: -40px;
+}
+
+
+.sec6 .button-text {
+    font-size: 0.9rem; /* Font size for the button text */
+    color: #ffffff; /* Text color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+   
+    .sec6 .banner {
+        position: absolute; /* Remove absolute positioning for small screens */
+        margin-top: 0; /* Reset margin-top */
+        height: auto; /* Adjust height to auto */
+        background-repeat: no-repeat;
+        /* padding-top: 20%; */
+        height: 80%;
+    }
+
+    .sec6 .title {
+        /* margin-top: 20px; */ /* Adjust margin for title if needed */
+        font-size: 20px;
+    }
+
+   
+
+    .sec6 .button-img {
+        margin-bottom: 5px; /* Space between image and text */
+    }
+
+    .sec6 .arrow {
+        width: 1.5rem; /* Adjust size of the arrow icon */
+    }
+}
+@media (max-width: 480px){
+.sec6 .button{
+    margin-top: 20px;
+}
+}
+
+.sec6 .button .arrow{
+    width: 2rem;
 }
